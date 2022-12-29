@@ -1,0 +1,222 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.nav>h1 {
+    display: none;
+}
+
+.company-logo {
+    max-width: 50px;
+    margin-right: 0%;
+}
+
+.link-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+
+}
+
+.links::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #c77dff;
+    transition: width .3s ease-in-out;
+}
+
+.links:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #c77dff;
+}
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.email {
+    width: 30%;
+    margin-bottom: 1%;
+    font-family: inherit;
+    padding: 0.2% 0;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 280px;
+}
+
+.button {
+    width: 10%;
+    font-family: inherit;
+    padding: 0.5% 0%;
+    border-radius: 8px;
+    transition: background-color .500s;
+    min-width: 97px;
+}
+
+.features {
+    width: 60%;
+    align-self: center;
+}
+
+.feature-item {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.p-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divider {
+    width: 100%;
+}
+
+.violetbg {
+    all: inherit;
+    background-color: #e498ff;
+
+}
+
+.how-it-works {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-self: center;
+    margin: 5% 0;
+}
+
+.pricing-item {
+    width: 30%;
+    text-align: center;
+    min-width: 216px;
+    border-radius: 27px;
+    background: linear-gradient(145deg, #fbfaff, #fbfaff);
+    box-shadow: 10px 10px 20px #a24ccd,
+        -10px -10px 20px #d099e3;
+}
+
+.pricing-item>h2 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.plan-select {
+    margin: 1% 0 5% 0;
+    font-size: 1em;
+    padding: 1% 7%;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 10px;
+    border: solid 1px #ced4da;
+    transition: background-color .500s;
+}
+
+h3 {
+    margin: 0 0 0 0;
+    padding: 3% 0;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #f2a8ff;
+    height: 5%;
+    text-align: right;
+    padding: 1% 0%;
+}
+
+.footer>div {
+    margin: 0.5% 1%;
+}
+
+.footer-link {
+    padding: 0% 1%;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-txt {
+    margin: 0.5% 1% 1% 0%;
+}
+
+.plan-select:hover {
+    background-color: #f2ebfb;
+}
+
+.button:hover {
+    background-color: #f2ebfb;
+}
+
+@media(max-width:910px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-item {
+        margin: 3% 0%;
+        width: 70%;
+    }
+
+    .button {
+        margin: 2% 0;
+    }
+
+    .nav {
+        justify-content: none;
+    }
+
+    .link-div {
+        display: none;
+    }
+
+    .nav>h1 {
+        display: block;
+        align-self: center;
+    }
+
+    .company-logo {
+        margin: 1% 5%;
+    }
+}
