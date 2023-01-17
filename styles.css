@@ -7,6 +7,9 @@ body {
 }
 
 
+h1 {
+    font-size: 3em;
+}
 
 a {
     text-decoration: none;
@@ -60,23 +63,51 @@ a {
     margin: 5% 0;
 }
 
+.form1 {
+    display: flex;
+    width: 600px;
+}
+
+
 .email {
+    outline: 0;
+    font-size: 1em;
     width: 30%;
     margin-bottom: 1%;
     font-family: inherit;
     padding: 0.2% 0;
-    border-radius: 15px;
-    text-align: center;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: inherit;
     min-width: 280px;
+    margin-right: 1%;
+
+}
+
+.email:focus {
+    border-color: #6e44ff;
 }
 
 .button {
-    width: 10%;
+    width: 20%;
     font-family: inherit;
-    padding: 0.5% 0%;
-    border-radius: 8px;
+    padding: 0.5% 1%;
     transition: background-color .500s;
     min-width: 97px;
+    border: 1px solid;
+    font-size: 1em;
+}
+
+#gs-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6e44ff;
+    color: white;
+    border: 1px solid silver;
+    padding: 1% 1%;
+    width: 25%;
+    border-radius: 4px;
 }
 
 .features {
@@ -145,7 +176,6 @@ ul {
     font-size: 1em;
     padding: 1% 7%;
     font-family: inherit;
-    font-weight: 600;
     border-radius: 10px;
     border: solid 1px #ced4da;
     transition: background-color .500s;
