@@ -218,7 +218,7 @@ h3 {
     background-color: #f2ebfb;
 }
 
-@media(max-width:910px) {
+@media(max-width:1152px) {
     .pricing {
         flex-direction: column;
         align-items: center;
@@ -229,8 +229,13 @@ h3 {
         width: 70%;
     }
 
-    .button {
-        margin: 2% 0;
+    h1 {
+        font-size: 2.2em;
+    }
+
+    iframe {
+        width: 600px;
+        height: 300px;
     }
 
     .nav {
@@ -244,6 +249,8 @@ h3 {
     .nav>h1 {
         display: block;
         align-self: center;
+        margin-right: 5%;
+        font-size: 2em;
     }
 
     .company-logo {
