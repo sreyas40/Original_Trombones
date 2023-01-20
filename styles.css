@@ -16,6 +16,10 @@ a {
     color: black;
 }
 
+p {
+    line-height: 1.8;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -229,6 +233,14 @@ h3 {
         width: 70%;
     }
 
+    .features {
+        width: 80%;
+    }
+
+    .form1 {
+        margin: 3% 0 0 13%;
+    }
+
     h1 {
         font-size: 2.2em;
     }
@@ -256,4 +268,34 @@ h3 {
     .company-logo {
         margin: 1% 5%;
     }
+}
+
+@media(max-width:647px) {
+    iframe {
+        width: 400px;
+    }
+
+    h1 {
+        padding-left: 3%;
+    }
+
+    .pricing-item {
+        width: 100%;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .form1 {
+        flex-direction: column;
+        margin-top: 5%;
+        padding-left: 45%;
+    }
+
+    #gs-btn {
+        margin-top: 2%;
+    }
+
+
 }
