@@ -181,8 +181,13 @@ ul {
     padding: 1% 7%;
     font-family: inherit;
     border-radius: 10px;
-    border: solid 1px #ced4da;
+    border: solid 1px #0e2d4d;
     transition: background-color .500s;
+    cursor: pointer;
+}
+
+span {
+    font-weight: bolder;
 }
 
 h3 {
